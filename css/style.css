@@ -1,5 +1,7 @@
 button {
     background-color: #057d81;
     font: normal 16px Arial, Helvetica, sans-serif;
-    color:#df0c17;
+    color:#f2f7f8;
+    line-height:3.6em;
+	margin:0;
 }
