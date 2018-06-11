@@ -10,3 +10,10 @@ for (i = 0; i < listItems.length; i++){
 function activateItem(){
     ourHeadline.innerHTML = this.innerHTML;
 }
+ourButton.addEventListener("click", addItem);
+
+function addItem(){
+    ourList.innerHTML += "<li>item " + newItemcounter + "</li>";
+    newItemcounter++;
+    
+}
