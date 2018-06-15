@@ -9,7 +9,7 @@ for (i = 0; i < listItems.length; i++){
 }
 function activateItem(){
     ourHeadline.innerHTML = this.innerHTML;
-    this.classList.add(active);
+    this.classList.add("active");
 }
 
 ourButton.addEventListener("click", addItem);
