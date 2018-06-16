@@ -9,7 +9,7 @@ ourList.addEventListener("click", activateItem);
 
 function activateItem(e){
     if(e.taget.nodeName == "LI"){
-        ourHeadline.innerHTML = this.innerHTML;
+        ourHeadline.innerHTML = e.target.innerHTML;
     for (i = 0; i < listItems.length; i++){
         listItems[i].classList.remove("active");
     }    
