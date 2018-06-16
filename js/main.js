@@ -10,10 +10,10 @@ ourList.addEventListener("click", activateItem);
 function activateItem(e){
     if(e.taget.nodeName == "LI"){
         ourHeadline.innerHTML = e.target.innerHTML;
-    for (i = 0; i < listItems.length; i++){
-        listItems[i].classList.remove("active");
+    for (i = 0; i < e.target.parentNode.children.length; i++){
+        e.target.parentNode.children[i].classList.remove("active");
     }    
-    this.classList.add("active");
+    e.target.classList.add("active");
     }
 }
 
