@@ -7,7 +7,7 @@ var listItems = document.getElementById("our-list").getElementsByTagName("li")
 
 ourList.addEventListener("click", activateItem);
 
-function activateItem(){
+function activateItem(e){
     if(e){
         ourHeadline.innerHTML = this.innerHTML;
     for (i = 0; i < listItems.length; i++){
