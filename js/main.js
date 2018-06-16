@@ -8,7 +8,7 @@ var listItems = document.getElementById("our-list").getElementsByTagName("li")
 ourList.addEventListener("click", activateItem);
 
 function activateItem(e){
-    if(e){
+    if(e.taget.nodeName == "LI"){
         ourHeadline.innerHTML = this.innerHTML;
     for (i = 0; i < listItems.length; i++){
         listItems[i].classList.remove("active");
