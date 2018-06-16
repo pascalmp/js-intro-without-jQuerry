@@ -8,11 +8,13 @@ var listItems = document.getElementById("our-list").getElementsByTagName("li")
 ourList.addEventListener("click", activateItem);
 
 function activateItem(){
-    ourHeadline.innerHTML = this.innerHTML;
+    if(e){
+        ourHeadline.innerHTML = this.innerHTML;
     for (i = 0; i < listItems.length; i++){
         listItems[i].classList.remove("active");
     }    
     this.classList.add("active");
+    }
 }
 
 ourButton.addEventListener("click", addItem);
