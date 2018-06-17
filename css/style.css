@@ -23,7 +23,7 @@ h1{
     background-color:#f3e416;
     color: rgb(216, 18, 18);
 }
-#active{
+.active{
 	background-color:blue;
 	color: #f3e416;
 }
