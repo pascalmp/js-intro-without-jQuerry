@@ -33,7 +33,7 @@ function activateItem(){
 ourButton.addEventListener("click", addItem);
 
 function addItem(){
-    ourList.innerHTML += "<li>item " + newItemcounter + "</li>";
+    ourList.innerHTML += "<li> item " + newItemcounter + "</li>";
     newItemcounter++;
     
 }
