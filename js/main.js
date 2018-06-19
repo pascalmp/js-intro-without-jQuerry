@@ -2,7 +2,7 @@ var newItemcounter = 1
 var ourList = document.querySelector("#our-list")
 var ourButton = document.getElementById("our-button")
 var ourHeadline = document.getElementById("our-headline")
-var listItems = document.getElementById("our-list").getElementsByTagName("li")
+var listItems = document.querySelectorAll("#our-list li")
 
 
 ourList.addEventListener("click", activateItem);
